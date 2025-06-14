@@ -1,4 +1,17 @@
 /* styles.css additions for centered homepage and avatar */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  font-family: system-ui, sans-serif;
+}
+
 .centered-main {
   display: flex;
   flex-direction: column;
