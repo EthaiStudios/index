@@ -71,3 +71,57 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+/* Dark mode and minimalist adjustments */
+body {
+  background: #18181b;
+  color: #f4f4f5;
+}
+
+nav {
+  background: #232329;
+  box-shadow: none;
+}
+
+nav a {
+  color: #f4f4f5;
+  background: transparent;
+}
+
+nav a.active {
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.logo {
+  background: #232329;
+  box-shadow: none;
+}
+
+/* Use SF Pro Expanded for headers, fallback to system font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SF Pro Display', 'SF Pro Expanded', 'Segoe UI', Arial, sans-serif;
+  font-stretch: expanded;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+main {
+  background: #232329;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  padding: 2em 1.5em;
+  margin-top: 2em;
+}
