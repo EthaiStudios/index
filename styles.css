@@ -1,63 +1,52 @@
-/* styles.css additions for centered homepage and avatar */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* Gotham font-face example (you must have the font files in your project) */
+@font-face {
+  font-family: 'Gotham';
+  src: url('https://fonts.googleapis.com/css2?family=Gotham:wght@400&display=swap');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
+  font-family: 'Gotham', Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  padding: 0 32px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 24px;
+  /* Ensures logo is at the top left */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  font-family: system-ui, sans-serif;
 }
 
-.centered-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
-  text-align: center;
+nav ul li {
+  margin-left: 24px;
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 1.2em;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-  background: #fff;
-  object-fit: cover;
-}
-
-.button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-.main-btn {
-  background: #18181b;
-  color: #fff;
-  border: 1px solid #444;
-  border-radius: 6px;
-  padding: 0.7em 1.6em;
-  font-size: 1.1em;
-  font-weight: 600;
+nav ul li a {
   text-decoration: none;
-  transition: background 0.18s, color 0.18s, border 0.18s;
-}
-.main-btn:hover {
-  background: #fff;
-  color: #18181b;
-  border: 1px solid #fff;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-.tagline {
-  color: #bdbdbd;
-  font-size: 1.1em;
-  margin-bottom: 1.5em;
+nav ul li a:hover {
+  color: #0078d7;
 }
