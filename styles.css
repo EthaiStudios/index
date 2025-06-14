@@ -1,127 +1,50 @@
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f7fa;
-  color: #222;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background: #222;
-  padding: 0.5em 1.5em;
+/* styles.css additions for centered homepage and avatar */
+.centered-main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.2em;
-  min-height: 56px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
 }
 
-.logo-link {
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1.2em;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  background: #fff;
+  object-fit: cover;
+}
+
+.button-group {
   display: flex;
-  align-items: center;
-  margin-right: 1.5em;
-  padding: 0;
-  height: 40px;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
 }
 
-.logo {
-  height: 40px;
-  width: auto;
-  display: block;
-  border-radius: 6px;
-  background: #fff;
-  padding: 2px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.3em 1em;
-  border-radius: 4px;
-  transition: background 0.18s, color 0.18s;
-}
-nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-nav a.active {
-  background: #fff;
-  color: #222;
-}
-nav a.logo-link img {
-  height: 40px;
-  width: auto;
-}
-main {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 0 1.5em;
-}
-h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-h2 {
-  font-size: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Dark mode and minimalist adjustments */
-body {
+.main-btn {
   background: #18181b;
-  color: #f4f4f5;
-}
-
-nav {
-  background: #232329;
-  box-shadow: none;
-}
-
-nav a {
-  color: #f4f4f5;
-  background: transparent;
-}
-
-nav a.active {
-  background: #f4f4f5;
-  color: #18181b;
-}
-
-.logo {
-  background: #232329;
-  box-shadow: none;
-}
-
-/* Use SF Pro Expanded for headers, fallback to system font */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'SF Pro Display', 'SF Pro Expanded', 'Segoe UI', Arial, sans-serif;
-  font-stretch: expanded;
-  font-weight: 700;
-  letter-spacing: 0.01em;
   color: #fff;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.7em 1.6em;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+.main-btn:hover {
+  background: #fff;
+  color: #18181b;
+  border: 1px solid #fff;
 }
 
-h1 {
-  font-size: 2.2em;
-  margin-top: 1.5em;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
-main {
-  background: #232329;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-  padding: 2em 1.5em;
-  margin-top: 2em;
+.tagline {
+  color: #bdbdbd;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
 }
